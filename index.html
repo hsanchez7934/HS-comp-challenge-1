@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Static Comp 1</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arsenal|Playfair+Display+SC" rel="stylesheet">
+  </head>
+  <body class="clearfix">
+    <!-- DIV WITH ID="BOXES-CONTAINER", BELOW, CONTAINS 3 DIV'S, WHICH ARE MADE INTO 3 ROWS TO CONTAIN SECTIONS-->
+    <div id="boxes-container">
+      <!-- BEGINNING OF ROW1, ROW1 CONTAINS 2 SECTIONS, INTROUCTORY BOX AND CAR MAKE HISTORY BOX -->
+      <div class="'rows'" id="row1">
+          <section id="introductory-box">
+            <h1 id="heading">The Rolls Royce Dawn</h1>
+            <p id="introductory-box-text">After the darkness comes Dawn. Dawn lives in the moment. The moment is <em>now</em>.</p>
+            <button type="button" name="button" id="introductory-box-buttons">Find a dealer</button>
+            <button type="button" name="button" id="introductory-box-buttons">Dawn Homepage</button>
+          </section>
+          <section id="car-make-history-box">
+            <img src="logos/Rolls-Royce-Logo.jpg" alt="Car make Rolls Royce logo." id="rolls-royce-logo">
+            <label for="history-logo" id="history-tab">History</label>
+          </section>
+      </div>
+      <!-- END OF ROW1 -->
+      <!-- BEGINNING OF ROW 2, ROW2 CONTAINS 3 SECTIONS, INTRO TO DAWN BOX, PRICE INFORMATION BOX, & SPECS BOX -->
+      <div class="rows" id="row2">
+          <section id="intro-to-dawn-box" class="information-boxes">
+            <img src="logos/angel.jpg" alt="Iconic Rolls Royce angel ornament." id="dawn-intro-logo">
+            <label for="introduction-logo" id="intro-tab">The Dawn</label>
+          </section>
+          <section id="price-box" class="information-boxes">
+            <img src="logos/dollarsignlogo.jpg" alt="Dollar sign." id="dollar-sign-logo">
+            <label for="price-box" id="price-tab">Price</label>
+          </section>
+          <section id="specs-box" class="information-boxes">
+            <img src="logos/toollogo1.png" alt="Mechanics tools clipart." id="specs-logo">
+            <label for="specs-box" id="specs-tab">Specifications</label>
+          </section>
+      </div>
+      <!-- END OF ROW2 -->
+      <!-- BEGINNING OF ROW3, ROW3 CONTAINS 3 SECTIONS, EXTERIOR INFO BOX, INTERIOR INFO BOX, & DRIVABILITY INFO BOX -->
+      <div class="rows" id="row3">
+          <section id="exterior-box" class="information-boxes">
+            <img src="logos/exteriorlogo.png" alt="Small clipart of an automobile." id="exterior-logo">
+            <label for="exterior-box" id="exterior-tab">Exterior</label>
+          </section>
+          <section id="interior-box" class="information-boxes">
+            <img src="logos/interiorlogo.png" alt="Clipart of a steering wheel." id="interior-logo">
+            <label for="interior-box" id="interior-tab">Interior</label>
+          </section>
+          <section id="drivability-box" class="information-boxes">
+            <img src="logos/roadlogo.png" alt="" id="drivability-logo">
+            <label for="driveability-box" id="drivability-tab">Drivability</label>
+          </section>
+      </div>
+      <!-- END OF ROW3 -->
+      <!-- BELOW DIV CLOSING TAG, MARKS END OF DIV WITH ID="BOXES-CONTAINER" -->
+    </div>
+    <!-- ASIDE TAG USED TO HOLD IMAGES OF ROLLS ROYCE DAWN VEHICLE -->
+      <aside class="vehicle-images-box" "clearfix">
+        <img src="logos/rollsroycedawn.jpg" alt="White Rolls Royce Dawn, top view, white interior." id="vehicle-image">
+      </aside>
+  </body>
+</html>

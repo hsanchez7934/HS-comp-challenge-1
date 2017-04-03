@@ -1,0 +1,283 @@
+* {
+    box-sizing: border-box;
+}
+/*BODY MARGIN AND PADDING*/
+body {
+  margin: 0;
+  padding: 0;
+}
+/*FONT COLOR FOR TEXT CONTAINED INSIDE EVERY SECTION TAG*/
+section {
+  color: #e6e6e6;
+}
+/*HEADING INSIDE INTRODUCTORY BOX TEXT SIZE*/
+h1 {
+  font-size: 32px;
+}
+/*SIZE AND POSITIONING OF DIV WITH ID="BOXES-CONTAINER"*/
+#boxes-container {
+  width: 60%;
+  float: left;
+  /*border: 1px ridge #e6e6e6;*/
+}
+/*SIZING, POSITIONING OF SECTIONS WITH CLASS="INFORMATION-BOXES"*/
+.information-boxes {
+  height: 245px;
+  width: 33.80%;
+  margin: 0px 0px 0px -4px;
+  border: 1px ridge #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*DIV WITH CLASS="ROWS", DIV'S WITH ID'S="ROW1, ROW2, & ROW3"*/
+.rows {
+  width: 100%;
+  /*border: 1px ridge #e6e6e6;*/
+}
+#row1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#row2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#row3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*ROW1, DIV WITH INTRODUCTORY BOX & EVERYTHING CONTAINED WITHIN*/
+#introductory-box {
+  background-color: #272727;
+  height: 245px;
+  width: 66.2%;
+  float: left;
+  padding: 15px 10px 0px 13px;
+  border-top: 1px ridge #e6e6e6;
+  border-right: 1px ridge #e6e6e6;
+}
+
+#introductory-box-buttons {
+  height: 35px;
+  width: 130px;
+  background-color: #272727;
+  color: #e6e6e6;
+  font-family: 'Arsenal', sans-serif;
+  font-size: 13px;
+  margin: 10px 0px 0px 30px;
+  border-top: none;
+  border-bottom: none;
+  border-left: solid;
+  border-right: groove;
+  border-right-width: 2px;
+  border-left-width: 2px;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+  cursor: pointer;
+  display: inline-block;
+}
+
+#introductory-box-buttons:hover {
+  text-decoration: underline;
+}
+
+#heading {
+  font-family: 'Playfair Display SC', serif;
+  color: #e6e6e6;
+}
+
+#introductory-box-text {
+  font-family: 'Arsenal', sans-serif;
+}
+
+/*ROW1, DIV WITH ID="CAR-MAKE-HISTORY-BOX" & EVERYTHING CONTAINED WITHIN*/
+#car-make-history-box {
+  background-color: #454545;
+  height: 245px;
+  width: 33.8%;
+  float: right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px ridge #e6e6e6;
+  border-right: 1px ridge #e6e6e6;
+}
+
+#rolls-royce-logo {
+  height: 100px;
+  width: 60px;
+  cursor: pointer;
+}
+
+#history-tab {
+  font-family: 'Arsenal', sans-serif;
+  cursor: pointer;
+}
+
+/*ROW 2 SECTIONS, INTRO TO DOWN, PRICE, & SPECS BOX*/
+#intro-to-dawn-box {
+  background-color: #363636;
+}
+
+#dawn-intro-logo {
+  width: 90px;
+  height: 100px;
+  cursor: pointer;
+}
+
+#intro-tab {
+  font-family: 'Arsenal', sans-serif;
+  cursor: pointer;
+}
+
+#price-box {
+  background-color: #676767;
+}
+
+#dollar-sign-logo {
+  height: 100px;
+  width: 105px;
+  cursor: pointer;
+
+}
+
+#price-tab {
+  font-family: 'Arsenal', sans-serif;
+  cursor: pointer;
+}
+
+#specs-box {
+  background-color: #272727;
+}
+
+#specs-logo {
+  height: 95px;
+  width: 90px;
+  cursor: pointer;
+}
+
+#specs-tab {
+  font-family: 'Arsenal', sans-serif;
+  cursor: pointer;
+}
+
+/*ROW3 SECTIONS, EXTERIOR, INTERIOR, & DRIVABILITY BOXES*/
+#exterior-box{
+  background-color: #585858;
+}
+
+#exterior-logo {
+  height: 100px;
+  width:  135px;
+  cursor: pointer;
+}
+
+#exterior-tab {
+  font-family: 'Arsenal', sans-serif;
+  cursor: pointer;
+}
+
+#interior-box{
+  background-color: #363636;
+}
+
+#interior-logo {
+  height: 100px;
+  width: 105px;
+  cursor: pointer;
+}
+
+#interior-tab {
+  font-family: 'Arsenal', sans-serif;
+  cursor: pointer;
+}
+
+#drivability-box {
+  background-color: #585858;
+}
+
+#drivability-logo {
+  height: 100px;
+  width: 80px;
+  cursor: pointer;
+}
+
+#drivability-tab {
+  font-family: 'Arsenal', sans-serif;
+  cursor: pointer;
+}
+
+/*VEHICLE IMAGE AND VEHICLE IMAGE CONTAINER*/
+#vehicle-image {
+  height: 722px;
+  width: 100%;
+}
+
+.vehicle-images-box {
+  width: 40%;
+  float: right;
+  border: 5px ridge #262626;
+}
+
+.clearfix:after {
+  content:" ";
+  display: table;
+  clear: both;
+}
+
+/*BREAKPOINTS, MEDIA QUERY'S*/
+@media screen and (max-width: 1300px) {
+  #introductory-box {
+  text-align: center;
+}
+
+  #boxes-container {
+    float: none;
+    width: 100%;
+  }
+
+  .vehicle-images-box {
+    float: left;
+    width: 100%;
+  }
+
+  #vehicle-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .information-boxes {
+    height: 245px;
+    width: 33.64%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .information-boxes {
+    border: 2px ridge #e6e6e6;
+    width: 100%;
+  }
+
+  #introductory-box {
+    width: 100%;
+  }
+
+  #car-make-history-box {
+    width: 100%;
+  }
+
+  #row1,
+  #row2,
+  #row3 {
+    display: flex;
+    flex-direction: column;
+  }
+}
